@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Karla:wght@300;400&family=Noto+Sans:wght@300;400&display=swap');
+
+
+.navbar {
+    
+    font-family: 'Amita', serif; 
+    font-size: 17px;
+    color: #d0fff7;
+/**/
+    display: flex;
+    flex-wrap: row;
+    justify-content: space-between;
+    align-items: center ;
+    
+    position: sticky;
+    top: 0%;
+}
+
+.container-fluid
+{
+    background-color: rgb(225, 252, 255);
+}
+
+
+.card-footer {
+
+    margin-top: 6%;
+    background-color: #eaf8fa;
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/pictures/FondF.png') ; */
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 1em;
+    text-align: center;
+    font-size: 1.4rem;
+}
