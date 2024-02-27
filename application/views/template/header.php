@@ -7,6 +7,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>assets/pictures/favicon.ico" />
     <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css'); ?>">
     <link rel="stylesheet" href="<?php echo base_url();?>assets/css/custom.css?version=3">
+	<script src="<?php echo base_url('public/js/bundle.js'); ?>"></script>
+
     </head>
     <body>
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
