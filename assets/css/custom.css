@@ -1,36 +1,162 @@
 @import url('https://fonts.googleapis.com/css2?family=Amita:wght@400;700&family=Karla:wght@300;400&family=Noto+Sans:wght@300;400&display=swap');
 
+/* ----------------------------- Barre de Navigation ------------------------------ */
+  /* Marge, police d'écriture barre de navigation */
+nav {
+    padding:0 2%; /* marge intérieure 0 en hetbas */
+    margin:  0;
+    font-family: 'Amita', serif; 
+    font-size: 17px;
+  /**/
+    display: flex; /* conteneur flexible */
+    flex-wrap: row; /* sur 1 ligne */
+    justify-content: space-between;
+    align-items: center ;
+    background-color: rgb(49, 153, 153);
+    position: sticky; /* colle pour le defilement */
+    top: 0%;
+}
 
+/* Lien hypertexte des onglets */
+nav a, nav a:visited {
+    display: block;
+    text-decoration: none;
+    color: #30b3a8;
+}
+
+  /* Katia Guerrouahen*/
+nav h1 {
+    margin-left: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    border-bottom: 3px solid #fff ;
+}
+nav h1:hover {
+    border-bottom-color: rgb(60, 191, 201)
+}
+nav h1, nav h1:visited {
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+/* Onglets*/
+nav ul {
+    display: flex;
+    list-style-type: none ; /*retrait des pts*/
+}
+nav ul li {
+    margin-left: 60px;
+    cursor: pointer;
+    border-bottom: 2px solid #fff ;
+}
+nav ul li:hover {
+    border-bottom-color: rgb(60, 191, 201) ;
+}
 .navbar {
     
     font-family: 'Amita', serif; 
     font-size: 17px;
-    color: #d0fff7;
+    color: #509287;
 /**/
     display: flex;
     flex-wrap: row;
     justify-content: space-between;
     align-items: center ;
-    
+    margin-right: 3px ;
     position: sticky;
     top: 0%;
 }
 
+/* Header */
+
+
+
+/* ------------------------------------------- Page Generale ---------------------------------*/
+
+/*entête je suis développeuse*/
+.page-content header h1 {
+    margin: 2%;
+    font-family: font-family 'Karla', sans-serif;
+    font-size: 40px;
+}
+
+  /* Présentation */
+.page-content header p {
+    line-height: 30px;
+    font-family: font-family 'Noto Sans', sans-serif;
+    color: rgb(35, 167, 177);
+    font-size: 30px;
+}
+.page-content .bouton-ensavoirplus {
+    margin: 10%;
+    margin-top: 2%;
+    display: block;
+    text-decoration: none;
+    font-family: 'Amita', serif;
+    font-size:30px;
+    background-color: rgb(8, 85, 90);
+    color: black;
+    text-align: center; 
+    line-height: 56px;
+}
+
+/* Formulaire User */
 .container-fluid
 {
     background-color: rgb(225, 252, 255);
+    margin-left: 10px;
+    margin-top: 10px;
 }
 
-
+/* footer */
 .card-footer {
 
-    margin-top: 6%;
+    margin-top: 2%;
     background-color: #eaf8fa;
-    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/pictures/FondF.png') ; */
+    /*background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('assets/pictures/FondF.png') ; */ 
     background-position: center;
     background-size: cover;
     color: #ffffff;
     padding: 1em;
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.5rem;
 }
+
+/* Texte et Presentation */
+  
+.page-content {
+    margin: 4%;
+} 
+.page-content header {
+    margin-top: 5%;
+    max-width: 95%;
+    margin-left: 30px;
+    text-align: center;
+    background-color: #3d807c;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/assets/pictures/FondF.png') ;
+    background-position: center;
+    background-size: cover;
+    color: #ffffff;
+    padding: 1em;
+}
+
+/*header*/
+
+
+/*
+
+/*Responsive : format mobile*/
+@media screen and (max-width: 700px) 
+{
+    nav {
+        justify-content: center;
+    }
+
+    nav ul {
+        display: none;
+    }
+
+}
+
+ 

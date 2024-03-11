@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<body>
+	<body>
 <!-- validation form pour les msg erreurs-->
 	<div>
 		<?php if($this->session->flashdata('success')): ?>

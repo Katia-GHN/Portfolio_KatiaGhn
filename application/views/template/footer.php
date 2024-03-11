@@ -1,9 +1,11 @@
 
+<!DOCTYPE html>
+<html lang="en">
+    <link href="<?php echo base_url();?>assets/css/custom.css"  rel="stylesheet">
+	
+	
 
-<script src="<?php echo base_url('assets/js/bootstrap.min.js'); ?>"></script>
-
-<div class="card-footer text-muted">
-    <div>
+    <div class="card-footer">
         <h5 class="card-title">Liens vers réseaux</h5>
         <ul class="ReseauxSociaux">
             <a href="https://github.com/Katia-GHN" target="_blank">
@@ -13,4 +15,5 @@
             </a>
         </ul>
     </div>
-</div>
+
+</html>
