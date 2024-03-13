@@ -101,7 +101,7 @@ nav ul li:hover {
     line-height: 56px;
 }
 
-/* Formulaire User */
+/* ----------------------------------- Formulaire User ------------------------------------*/
 .container-fluid
 {
     background-color: rgb(225, 252, 255);
@@ -109,7 +109,59 @@ nav ul li:hover {
     margin-top: 10px;
 }
 
-/* footer */
+/* Styles de base pour la checkbox switch */
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 92px;
+    height: 43px;
+  }
+  
+  /*case a coché caché*/
+  .switch input {
+    display: none;
+  }
+  
+  /* Styles pour la puce de la checkbox */
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc; /* Couleur de base de la puce */
+    transition: background-color 0.4s; 
+    border-radius: 34px;
+  }
+  
+  /* Styles pour l'icône à l'intérieur de la puce */
+  .slider-inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10px;
+    right: auto;
+  }
+  /* Couleur de l'icône */
+  .slider i {
+    color: white; 
+  }
+
+  /* Styles pour la puce lorsque la checkbox est activée */
+  input:checked + .slider {
+    background-color: #32e494; /* Couleur de fond lorsque la checkbox est activée */
+  }
+  
+  /* Styles pour l'icône lorsque la checkbox est activée */
+  input:checked + .slider .slider-inner  {
+    left: auto;
+    right: 8px;
+  }
+  
+
+  
+/* ----------------------------------------footer---------------------------------------- */
 .card-footer {
 
     margin-top: 2%;

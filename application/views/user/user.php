@@ -67,6 +67,22 @@
                 </div>
             <?php echo form_close(); ?>
         </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="container-fluid " id="container">
+                    <h5>test checkbox personnalisée </h5>
+                    <label class="switch">
+                        <input type="checkbox" id="myCheckbox">
+                        <span class="slider">
+                            <span class="slider-inner">
+                            <i class="fas fa-solid fa-folder fa-2x" id="folderIcon" ></i>
+                            <i class="fas fa-solid fa-folder-open fa-2x d-none" id="folderOpenIcon"></i>
+                            </span>
+                        </span>
+                    </label>
+                </div>
+            </div>
+        </div>
         <!-- retour des résultats via les inputs -->
 	    <div class="container-fluid col-7" id="container">
             <h1>Résultats du formulaire d'inscription</h1>
@@ -79,6 +95,32 @@
             <p>Id: <?php echo isset($user_id) ? $user_id : ''; ?></p>
         </div>
         <!-- liste des contacts -->
+        <div class="col-6 ml-4" id="container">
 	    <a href="<?php echo base_url('user/users_list'); ?>" class=" btn btn-primary ">Liste des contacts</a>
+        </div>
+
+        <script >
+            // Sélection de la case à cocher
+            var checkbox = document.getElementById('myCheckbox');
+
+            // Sélection des icônes de dossier
+            var folderIcon = document.getElementById('folderIcon');
+            var folderOpenIcon = document.getElementById('folderOpenIcon');
+
+            // Ajout d'un écouteur d'événements sur la case à cocher
+            checkbox.addEventListener('change', function() {
+            // Vérifie si la case à cocher est cochée
+            if (this.checked) {
+                // Si la case à cocher est cochée, afficher l'icône de dossier ouvert et masquer l'icône de dossier fermé
+                folderIcon.classList.add('d-none');
+                folderOpenIcon.classList.remove('d-none');
+            } else {
+                // Si la case à cocher est décochée, afficher l'icône de dossier fermé et masquer l'icône de dossier ouvert
+                folderIcon.classList.remove('d-none');
+                folderOpenIcon.classList.add('d-none');
+            }
+            });
+
+        </script>
     </body>
 </html>

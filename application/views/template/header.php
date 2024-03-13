@@ -8,8 +8,11 @@
     <link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url();?>assets/pictures/favicon.ico" /> <!-- icone site -->
     <link href="<?php echo base_url();?>assets/css/custom.css" rel="stylesheet">
     <link href="<?php echo base_url();?>assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="<?php echo base_url();?>assets/libraryFA/css/all.min.css" rel="stylesheet">
 	<script src="<?php echo base_url();?>assets/js/bootstrap.min.js"></script>
     <script src="<?php echo base_url();?>assets/js/bundle.js"></script>
+    <!-- bibliotheque Font Awesome --->
+    
 
 </head>
 <body id="NavBar1">
